@@ -67,6 +67,41 @@ const makeGuess = function (guess) {
     } else {
         guessedLetters.push(guess);
         console.log(guessedLetters);
+        showGuessedLetters();
+        updatedWordInProgress(guessedLetters);
     }
 };
 
+const showGuessedLetters = function () {
+    // Clears the list first
+    guessedLettersElement.innerHTML = '';
+    for (const letter of guessedLetters) {
+        const li = document.createElement('li');
+        li.innerText = letter;
+        guessedLettersElement.append(li);
+    }
+};
+
+// Replaces circle symbols with correct letter guesses.
+const updatedWordInProgress = function (guessedLetters) {
+    const wordUpper = word.toUpperCase();
+    const wordArray = wordUpper.split('');
+    // console.log(wordArray);
+    const showWord = [];
+    for (const letter of wordArray) {
+        if (guessedLetters.includes(letter)) {
+            showWord.push(letter.toUpperCase());
+        } else  {
+            showWord.push('●');
+        }  
+    }
+    wordInProgress.innerText = showWord.join('');
+    ifWonGame();
+};
+
+const ifWonGame = function () {
+    if (word.toUpperCase() === wordInProgress.innerText) {
+        message.classList.add('win');
+        message.innerHTML = '<p class="highlight">You guessed correct the word! Congrats!</p>';
+    }
+};
