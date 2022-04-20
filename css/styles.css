@@ -78,7 +78,7 @@ h1 {
 
 .message {
   text-align: center;
-  line-height: 1.2em;
+  line-height: 1.5em;
 }
 
 .guess-form {
@@ -191,7 +191,14 @@ input:focus {
     padding: .5em 0;
   }
 
+  .guess,
+  .play-again {
+    padding: .9em 1.65em;
+    font-size: .85em;
+  }
+
   .score-row {
       padding-top: 2em;
   }
+
 }
