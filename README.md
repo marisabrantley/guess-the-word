@@ -2,7 +2,7 @@
 
 This game was the first of two major projects in the course, testing our JavaScript skills such as looping through arrays, utlizing the proper methods, using regular expression, and fetching an API.
 
-I added additional features - a scoring system, max length on the text input, removing the autocomplete, and disabling the "Guess" button if the text field is empty.
+I added additional features - a scoring system, max length on the text input, removing the autocomplete, disabling the "Guess" button if the text field is empty, and media queries.
 
 <img width="497" alt="guess the word game" src="https://user-images.githubusercontent.com/60168324/164146858-d469af1c-c180-47da-ba8e-d919d0368af7.png">
 
