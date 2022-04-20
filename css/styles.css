@@ -137,7 +137,7 @@ input:focus {
 .score-row {
   text-align: center;
   width: 100%;
-  padding-top: 4.5em;
+  padding-top: 5em;
 }
 
 .score-text {
@@ -181,5 +181,16 @@ input:focus {
 
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    
+  h1 {
+    padding: .5em 0;
+  }
+
+  .score-row {
+      padding-top: 2em;
   }
 }
