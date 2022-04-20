@@ -50,7 +50,7 @@ h1 {
 }
 
 .highlight {
-  padding: 0.5em;
+  padding: 0.2em;
   background: #ffe2d6;
   font-size: 1em;
 }
@@ -78,6 +78,7 @@ h1 {
 
 .message {
   text-align: center;
+  line-height: 1.2em;
 }
 
 .guess-form {
