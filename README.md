@@ -2,8 +2,9 @@
 
 This game was the first of two major projects in the course, testing our JavaScript skills such as looping through arrays, utlizing the proper methods, using regular expression, and fetching an API.
 
-<img width="839" alt="Screen Shot 2022-04-18 at 7 50 37 PM" src="https://user-images.githubusercontent.com/60168324/163910561-20714000-7f0d-48e6-a682-478ecd90ab0c.png">
+I added additional features - a scoring system, max length on the text input, removing the autocomplete, and disabling the "Guess" button if the text field is empty.
 
+<img width="497" alt="guess the word game" src="https://user-images.githubusercontent.com/60168324/164146858-d469af1c-c180-47da-ba8e-d919d0368af7.png">
 
 ## How to Play
 The game starts with a word on the screen. Circle symbols act as placeholders for each letter. Players start by entering a letter. If they guess correctly, the letter appears in the word. If they guess incorrectly, they learn how many guesses they have remaining. The player can also see which letters they’ve already guessed. The game lets the player know if they’ve already guessed a letter or entered a non-alphabetic character!
