@@ -19,7 +19,7 @@ body {
 }
 
 .logo {
-  width: 70%;
+  width: 80%;
   max-width: 484px;
 }
 
@@ -89,7 +89,7 @@ h1 {
 .guess-form label {
   width: 100%;
   font-weight: normal;
-  font-size: 14px;
+  font-size: .8em;
   text-align: center;
 }
 
@@ -133,6 +133,34 @@ input:focus {
   background: brightness(0.3);
   color: white;
 }
+
+.score-row {
+  text-align: center;
+  width: 100%;
+  padding-top: 4.5em;
+}
+
+.score-text {
+  display: inline;
+  padding: .95em;
+  font-family: "Open Sans", sans-serif;
+  font-size: .8em;
+  color: #305050;
+}
+
+.score-box {
+  display: inline-block;
+  margin: 1.35em;
+  width: 2em;
+  background-color: #28bdbd;
+  font-family: "Unlock", sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  color: #305050;
+  margin-top: 0.5em;
+  padding: 0.5em;
+}
+
 
 /* animatied background */
 .win {

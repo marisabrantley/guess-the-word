@@ -19,6 +19,13 @@ let word = 'magnolia';
 let guessedLetters = [];
 let remainingGuesses = 8;
 
+let score = 0;
+let highScore = 0;
+let currentStreak = document.querySelector('#score-number');
+let bestStreak = document.querySelector('#high-score-number');
+currentStreak.innerHTML = score;
+bestStreak.innerHTML = highScore;
+
 const getWord = async () => {
     const res = await fetch('https://gist.githubusercontent.com/skillcrush-curriculum/7061f1d4d3d5bfe47efbfbcfe42bf57e/raw/5ffc447694486e7dea686f34a6c085ae371b43fe/words.txt');
     const data = await res.text();
@@ -32,6 +39,14 @@ const getWord = async () => {
 
 // Starts game
 getWord();
+
+textInput.addEventListener('input', (e) => {
+    if(textInput.value.length == 0) {
+        guessButton.disabled = true;
+    } else {
+        guessButton.disabled = false;
+    }
+});
 
 //Displays circle placeholders for each chosen letter.
 const placeholder = word => {
@@ -131,11 +146,20 @@ const updateRemainingGuesses = guess => {
     
 };
 
+const getYourScore = () => {
+    score++;
+    currentStreak.innerHTML = score;
+    if (score > highScore) {
+      highScore = score;
+      bestStreak.innerHTML = highScore;
+    }
+  };
+
 const ifWonGame = () => {
     if (word.toUpperCase() === wordInProgress.innerText) {
         message.classList.add('win');
         message.innerHTML = '<p class="highlight">You guessed the correct word! Congrats!</p>';
-
+        getYourScore();
         startOver();
     }
 };

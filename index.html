@@ -24,12 +24,22 @@
       <ul class="guessed-letters"></ul>
       <form action="" class="guess-form">
         <label for="letter">Type one letter:</label>
-        <input type="text" name="letter" class="letter" />
+        <input type="text" name="letter" class="letter" autocomplete="off" minlength="1" maxlength="1" />
         <div class="form-element button-element">
-          <button class="guess">Guess!</button>
+          <button class="guess" disabled>Guess!</button>
         </div>
       </form>
       <button class="play-again hide">Play Again!</button>
+      <table class="score-row">
+        <tr>
+          <th class="score-text">Current Score:</th>
+          <th class="score-text">Best Streak:</th>
+        <tr>
+          <th id="score-number" class="score-box"></th>
+          <th id="high-score-number" class="score-box"></th>
+         </tr> 
+       </table> 
+
     </div>
   </body>
 
