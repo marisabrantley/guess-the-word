@@ -1,6 +1,6 @@
 # Guess the Word Game
 
-This game was the first of two major projects in the course, testing our JavaScript skills such as looping through arrays, utlizing the proper methods, using regular expression, and fetching an API.
+This game uses JavaScript to loop through arrays, utlize proper methods, use regular expression, and fetch an API.
 
 I added additional features - a scoring system, max length on the text input, removing the autocomplete, disabling the "Guess" button if the text field is empty, and media queries.
 
